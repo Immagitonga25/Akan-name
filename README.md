@@ -1,8 +1,8 @@
 # Akan Name
 #### An application that calculates the day of the week you were born.
-#### By Immaculate gitonga
+#### By Immaculate Gitonga
 ## Description
-Akan Name is an application that tells you the day of the week you were born by assigning you an Akan name. Akan names are derived from the Ghanian culture and they correspond to days of the week. Each gender has different Akan names for the different days of the week. The application calculates the day of the week by taking your birthday date information and gender then assigns you your Akan name as per the day you were born.
+Akan Name is an application that tells you the day of the week you were born by assigning you an Akan name. Akan names are derived from the Ghanian culture and they correspond to days of the week. Each gender has different Akan names for the different days of the week. The application calculates the day of the week you were born by taking your birthday date information and gender then assigns you your Akan name as per the day you were born.
 ## Author(s) information
 Immaculate is an upcoming software devoloper who is currently a student at Moringa School. She is taking classes in Software Development to master skills in both website and mobile development.
 ## Setup/Installation Requirements
