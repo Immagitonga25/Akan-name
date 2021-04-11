@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    color: darkgreen;
+    font-weight: bold;
+}
+.info {
+    background-color: lightgrey;
+}
+h4 {
+    text-align: center;
+    background-color: yellow;
+    font-weight: bold;
+    font-style: oblique;
+
+}
+.list {
+    background-color: lightgray;
+    font-style: italic;
+}

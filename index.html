@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Akan name</title>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/class">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link  href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link  href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="container">
+    <div class="card">
+    <div class="info">
     <h1>Akan Name</h1>
     <p>This is a web application that tells you the day of the week you were born by assigning you an Akan name.
-         Akan names are derived from the Ghanian culture where children are given their first name as a 'day name'.
+         Akan names are derived from the <strong>Ghanian culture</strong> where children are given their first name as a <em>'day name'.</em>
           These names correspond to the day of the week they were born and vary depending on gender.<br> 
           This application will calculate the day of the week you were born using only your birthday date and will reveal the day you were born through an Akan name depending on your gender. </p>
+    </div>
+    </div>
     <p>Below are the Akan names for both genders:
-        <h2>MALE</h2>
-        <ul>
-            <li>Sunday: Kwasi</li>
-            <li>Monday: Kwadwo</li>
-            <li>Tuesday: Kwabena</li>
+        <div class="row">
+        <div class="col-md-6">
+        <h4>MALE</h4>
+        <ul class="list">
+            <li>Sunday:    Kwasi</li>
+            <li>Monday:    Kwadwo</li>
+            <li>Tuesday:   Kwabena</li>
             <li>Wednesday: Kwaku</li>
-            <li>Thursday: Yaw</li>
-            <li>Friday: Kofi</li>
-            <li>Saturday: Kwame</li>
+            <li>Thursday:  Yaw</li>
+            <li>Friday:    Kofi</li>
+            <li>Saturday:  Kwame</li>
         </ul>
-        <h2>FEMALE</h2>
-        <ul>
-            <li>Sunday: Akosua</li>
-            <li>Monday: Adwoa</li>
-            <li>Tuesday: Abenaa</li>
+        </div>
+        <div class="col-md-6">
+        <h4>FEMALE</h4>
+        <ul class="list">
+            <li>Sunday:    Akosua</li>
+            <li>Monday:    Adwoa</li>
+            <li>Tuesday:   Abenaa</li>
             <li>Wednesday: Akua</li>
-            <li>Thursday: Yaa</li>
-            <li>Friday: Afua</li>
-            <li>Saturday: Ama</li>
+            <li>Thursday:  Yaa</li>
+            <li>Friday:    Afua</li>
+            <li>Saturday:  Ama</li>
         </ul> 
+        </div>
+        </div>
     </p>
     <p>Fill in the details below using the example shown to know your Akan name!</p>
     <p>Example: 24/06/1998 <br>
@@ -44,13 +55,13 @@
     </ul></p>
     <form>
         <label for="centuryborn">Enter century of birth:</label>
-        <input type="number" id="century" name="centuryborn" placeholder="CC">
+        <input type="number" id="century" name="centuryborn" placeholder="CC" value="">
         <label for="yearborn">Enter year of birth:</label>
-        <input type="number" id="year" name="yearborn" placeholder="YY">
+        <input type="number" id="year" name="yearborn" placeholder="YY" value="">
         <label for="monthborn">Enter the month:</label>
-        <input type="number" id="month" name="monthborn" placeholder="MM">
+        <input type="number" id="month" name="monthborn" placeholder="MM" value="">
         <label for="dayborn">Enter the day:</label>
-        <input type="number" id="day" name="dayborn" placeholder="DD">
+        <input type="number" id="day" name="dayborn" placeholder="DD" value="">
     <p id="gender">Gender <br> 
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label><br>
@@ -62,6 +73,7 @@
     <p id="result"></p>
 
     </p>
+    </div>
 <script src="js/scripts.js"></script>   
 </body>
 </html>
