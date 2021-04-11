@@ -9,31 +9,33 @@ function monthBorn () {
     if (mm < 1 ||mm > 12) {
         alert("Input not valid!");
         return false;
-    } else {
-        return true;
+    }
     }
 }
 function dayBorn () {
     if (dd < 01 || dd > 31) {
         alert("Input not valid!");
         return false;
-    } else {
-        return true;
+    }
     }
 }
 function centuryBorn () {
     if (cc < 18 || cc > 20) {
         alert("Invalid input!")
         return false;
-    } else {
-        return true;
+    }
     }
 }
 function yearBorn () {
     if (yy < 00 || yy > 99) {
         alert("Invalid input!")
         return false;
-    } else {
-        return true;
+    } 
     }
+}
+function akanName () {
+    var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    var maleAkan = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
+    var femaleAkan = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+    
 }
