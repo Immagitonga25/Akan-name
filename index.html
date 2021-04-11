@@ -33,9 +33,16 @@
             <li>Saturday: Ama</li>
         </ul> 
     </p>
-    <p>Fill in the details below to know your Akan name!</p>
+    <p>Fill in the details below using the example shown to know your Akan name!</p>
+    <p>Example: 24/06/1998 <br>
+    <ul>
+        <li>Day(DD): 24</li>
+        <li>Month(MM): 06</li>
+        <li>Century(CC): 19</li>
+        <li>Year(YY): 98</li>
+    </ul></p>
     <form>
-        <label for="centuryborn">Enter year of birth:</label>
+        <label for="centuryborn">Enter century of birth:</label>
         <input type="number" id="century" name="centuryborn" placeholder="CC">
         <label for="yearborn">Enter year of birth:</label>
         <input type="number" id="year" name="yearborn" placeholder="YY">
@@ -43,15 +50,15 @@
         <input type="number" id="month" name="monthborn" placeholder="MM">
         <label for="dayborn">Enter the day:</label>
         <input type="number" id="day" name="dayborn" placeholder="DD">
-
-    </form>
     <p>Gender <br> 
-    <form>
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label>
+        <br>
+        <input type="submit" value="Submit">
     </form>
+
     </p>
 
     
