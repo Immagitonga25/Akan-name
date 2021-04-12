@@ -2,14 +2,12 @@
 function monthBorn () {
     if (mm < 1 ||mm > 12) {
         alert("Input not valid!");
-        return false;
     }
     }
 }
 function dayBorn () {
     if (dd < 01 || dd > 31) {
         alert("Input not valid!");
-        return false;
     }
     }
 }
