@@ -4,20 +4,11 @@ function akanName() {
     var day = parseInt(document.getElementById("day").value);
     var century = parseInt(document.getElementById("century").value);
     var year = parseInt(document.getElementById("year").value);
-    var genders = document.getElementById("gender").value;
-
-    function getGender () {
-        for (let gender of genders){
-          if (gender.checked){
-            return gender.value;
-          }
-        }
-      }
-    let genderValue = getGender();
-    console.log(genderValue);
+    var gender = document.getElementById("gender").value;
     
     function correctMonth() {
         if (month < 1 ||month > 12) {
+            alert("Invalid month");
             return false;
         } else {
             return true;
@@ -25,6 +16,7 @@ function akanName() {
     }
     function correctDay() {
         if (day < 01 || day > 31) {
+            alert("Invalid Day");
             return false;
         } else {
             return true;
@@ -32,8 +24,10 @@ function akanName() {
     }
     function correctYear() {
         if (century < 18 || century > 20) {
+            alert("Invalid Century");
             return false;
         } else if (year < 00 || year > 99) {
+            alert("Invalid Year");
             return false;
         } else {
             return true;
@@ -50,45 +44,47 @@ function akanName() {
     var dayOfWeek = (((cc/4)-2*cc-1)+((5*yy/4))+((26*(mm+1)/10))+dd)%7;
     var akanDay = (dayOfWeek.toFixed());
 
-    if (validDay && validMonth && validYear) {
-        if (akanDay === 0 && genderValue === "Male") {
+    
+        if (akanDay === 0 && gender === "Male" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent = "Your Akan Name is " + maleAkan[0];
             return true;
-        } else if (akanDay === 0 && genderValue === "Female") {
+        } else if (akanDay === 0 && gender === "Female" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent = "Your Akan Name is " + femaleAkan[0];
             return true;
-        } else if (akanDay === 1 && genderValue === "Male") {
+        } else if (akanDay === 1 && gender === "Male" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent = "Your Akan Name is " + maleAkan[1];
             return true;
-        } else if (akanDay === 1 && genderValue === "Female") {
+        } else if (akanDay === 1 && gender === "Female" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent = "Your Akan Name is " + femaleAkan[1];
             return true;
-        } else if (akanDay === 2 && genderValue === "Male") {
+        } else if (akanDay === 2 && gender === "Male" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent = "Your Akan Name is " + maleAkan[2];
             return true;
-        } else if (akanDay === 2 && genderValue === "Female") {
+        } else if (akanDay === 2 && gender === "Female" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent = "Your Akan Name is " + femaleAkan[2];
             return true;
-        } else if (akanDay === 3 && genderValue === "Male") {
+        } else if (akanDay === 3 && gender === "Male" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent ="Your Akan Name is " + maleAkan[3];
             return true;
-        } else if (akanDay === 3 && genderValue === "Female") {
+        } else if (akanDay === 3 && gender === "Female" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent="Your Akan Name is " + femaleAkan[3];
             return true;
-        } else if (akanDay === 4 && genderValue === "Male") {
+        } else if (akanDay === 4 && gender === "Male" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent="Your Akan Name is " + maleAkan[4];
             return true;
-        }else if (akanDay === 4 && genderValue === "Female") {
+        }else if (akanDay === 4 && gender === "Female" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent="Your Akan Name is " + femaleAkan[4];
             return true;
-        }else if (akanDay === 5 && genderValue === "Male") {
+        }else if (akanDay === 5 && gender === "Male" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent="Your Akan Name is " + maleAkan[5];
             return true;
-        }else if (akanDay === 5 && genderValue === "Female") {
+        }else if (akanDay === 5 && gender === "Female" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent="Your Akan Name is " + femaleAkan[5];
             return true;
-        } else if (akanDay === 6 && genderValue === "Male") {
+        } else if (akanDay === 6 && gender === "Male" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent="Your Akan Name is " + maleAkan[6];
             return true;
-        } else if (akanDay === 6 && genderValue === "Female") {
+        } else if (akanDay === 6 && gender === "Female" && validDay && validMonth && validYear) {
             document.getElementById("output").textContent="Your Akan Name is " + femaleAkan[6];
+        } 
+}
