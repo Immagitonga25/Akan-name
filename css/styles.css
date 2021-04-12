@@ -5,6 +5,7 @@ h1 {
 }
 .info {
     background-color: lightgrey;
+    padding: 20px;
 }
 h4 {
     text-align: center;
@@ -16,4 +17,29 @@ h4 {
 .list {
     background-color: lightgray;
     font-style: italic;
+}
+.red {
+    background-color:rgba(220, 20, 60, 0.699);
+    font-weight: bold;
+    padding-left: 20px;
+}
+.example {
+    padding-left: 20px;
+    font-style: italic;
+    font-weight: bold;
+    
+
+}
+.ulist {
+    font-style: italic;
+    color: darkgreen;
+    float: inherit;
+}
+.gender {
+    padding-top: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+body {
+    font-family: sans-serif;
 }

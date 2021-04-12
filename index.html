@@ -17,7 +17,7 @@
           This application will calculate the day of the week you were born using only your birthday date and will reveal the day you were born through an Akan name depending on your gender. </p>
     </div>
     </div>
-    <p>Below are the Akan names for both genders:
+    <p class="red">Below are the Akan names for both genders:
         <div class="row">
         <div class="col-md-6">
         <h4>MALE</h4>
@@ -45,14 +45,15 @@
         </div>
         </div>
     </p>
-    <p>Fill in the details below using the example shown to know your Akan name!</p>
-    <p>Example: 24/06/1998 <br>
-    <ul>
+    <p class="red">Fill in the details below using the example shown to know your Akan name!</p>
+    <p class="example">Example: 24/06/1998 <br>
+    <ul class="ulist">
         <li>Day(DD): 24</li>
         <li>Month(MM): 06</li>
         <li>Century(CC): 19</li>
         <li>Year(YY): 98</li>
     </ul></p>
+    <div class="card-body">
     <form>
         <label for="centuryborn">Enter century of birth:</label>
         <input type="number" id="century" name="centuryborn" placeholder="CC" value="">
@@ -62,7 +63,7 @@
         <input type="number" id="month" name="monthborn" placeholder="MM" value="">
         <label for="dayborn">Enter the day:</label>
         <input type="number" id="day" name="dayborn" placeholder="DD" value="">
-    <p id="gender">Gender <br> 
+    <p id="gender"> <span class="gender">Gender </span> <br> 
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="female">
@@ -73,6 +74,7 @@
     <p id="result"></p>
 
     </p>
+    </div>
     </div>
 <script src="js/scripts.js"></script>   
 </body>
