@@ -56,25 +56,28 @@
     <div class="card-body">
     <form>
         <label for="centuryborn">Enter century of birth:</label>
-        <input type="number" id="century" name="centuryborn" placeholder="CC" value="">
+        <input type="number" id="century" name="centuryborn" placeholder="CC">
         <label for="yearborn">Enter year of birth:</label>
-        <input type="number" id="year" name="yearborn" placeholder="YY" value="">
+        <input type="number" id="year" name="yearborn" placeholder="YY">
         <label for="monthborn">Enter the month:</label>
-        <input type="number" id="month" name="monthborn" placeholder="MM" value="">
+        <input type="number" id="month" name="monthborn" placeholder="MM">
         <label for="dayborn">Enter the day:</label>
-        <input type="number" id="day" name="dayborn" placeholder="DD" value="">
+        <input type="number" id="day" name="dayborn" placeholder="DD">
         <p id="gender"> <span class="gender">Gender </span> <br> 
-        <input type="radio" id="male" name="gender" value="male">
+        <input type="radio" id="male" name="male" value="male">
         <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
+        <input type="radio" id="female" name="female" value="female">
         <label for="female">Female</label>
+        <br>
+        <button id="btn">Calculate</button>
+        <input type="reset" value="Reset">
         </p>
-        <p id="result"></p>
-        <button type="button" onclick="getData(); centuryBorn();yearBorn();dayBorn();monthBorn();gender()">Submit</button>
+        <h5>RESULTS</h5>
+        <p id="output"></p>
     </form>
-    <h5>RESULTS</h5>
     </div>
     </div>
-<script src="js/scripts.js"></script>   
+<script src="js/scripts.js" type="text/javascript"></script>  
 </body>
+
 </html>
