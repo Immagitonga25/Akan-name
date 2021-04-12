@@ -63,17 +63,16 @@
         <input type="number" id="month" name="monthborn" placeholder="MM" value="">
         <label for="dayborn">Enter the day:</label>
         <input type="number" id="day" name="dayborn" placeholder="DD" value="">
-    <p id="gender"> <span class="gender">Gender </span> <br> 
+        <p id="gender"> <span class="gender">Gender </span> <br> 
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label>
-        <br>
-        <input type="submit" value="Submit">
+        </p>
+        <p id="result"></p>
+        <button type="button" onclick="getData(); centuryBorn();yearBorn();dayBorn();monthBorn();gender()">Submit</button>
     </form>
-    <p id="result"></p>
-
-    </p>
+    <h5>RESULTS</h5>
     </div>
     </div>
 <script src="js/scripts.js"></script>   
