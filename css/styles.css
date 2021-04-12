@@ -40,6 +40,12 @@ h4 {
     font-weight: bold;
     text-decoration: underline;
 }
+.result {
+    text-decoration: underline;
+    color: darkgreen;
+    font-weight: bold;
+    font-style: italic;
+}
 body {
     font-family: sans-serif;
 }

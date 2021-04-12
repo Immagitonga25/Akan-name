@@ -64,16 +64,18 @@
         <label for="dayborn">Enter the day:</label>
         <input type="number" id="day" name="dayborn" placeholder="DD" required>
         <p id="gender"> <span class="gender">Gender </span> <br> 
-        <input type="radio" id="male" name="male" value="male" required>
+        <input type="radio" id="male" name="male" value="male">
         <label for="male">Male</label><br>
-        <input type="radio" id="female" name="female" value="female" required>
+        <input type="radio" id="female" name="female" value="female">
         <label for="female">Female</label>
         <br>
         <button id="btn">Calculate</button>
         <input type="reset" value="Reset">
         </p>
-        <h5>RESULTS</h5>
+        <div class="card">
+        <h5 class="result">RESULTS</h5>
         <p id="output"></p>
+        </div>
     </form>
     </div>
     </div>
