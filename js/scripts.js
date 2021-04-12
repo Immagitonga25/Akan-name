@@ -41,7 +41,7 @@ function akanName() {
     var maleAkan = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
     var femaleAkan = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
       
-    var dayOfWeek = (((cc/4)-2*cc-1)+((5*yy/4))+((26*(mm+1)/10))+dd)%7;
+    var dayOfWeek = (((century/4)-2*century-1)+((5*year/4))+((26*(month+1)/10))+day)%7;
     var akanDay = (dayOfWeek.toFixed());
 
     
