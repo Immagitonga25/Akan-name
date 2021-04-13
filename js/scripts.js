@@ -42,46 +42,48 @@ function akanName() {
       
     var dayOfWeek = (((century/4)-2*century-1)+((5*year/4))+((26*(month+1)/10))+day)%7;
     var akanDay = (dayOfWeek.toFixed());
-        if (akanDay === 0 && gender === "Male" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = maleAkan[0];
-            return true;
-        } else if (akanDay === 0 && gender === "Female" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = femaleAkan[0];
-            return true;
-        } else if (akanDay === 1 && gender === "Male" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = maleAkan[1];
-            return true;
-        } else if (akanDay === 1 && gender === "Female" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = femaleAkan[1];
-            return true;
-        } else if (akanDay === 2 && gender === "Male" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = maleAkan[2];
-            return true;
-        } else if (akanDay === 2 && gender === "Female" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = femaleAkan[2];
-            return true;
-        } else if (akanDay === 3 && gender === "Male" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = maleAkan[3];
-            return true;
-        } else if (akanDay === 3 && gender === "Female" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = femaleAkan[3];
-            return true;
-        } else if (akanDay === 4 && gender === "Male" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = maleAkan[4];
-            return true;
-        }else if (akanDay === 4 && gender === "Female" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = femaleAkan[4];
-            return true;
-        }else if (akanDay === 5 && gender === "Male" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = maleAkan[5];
-            return true;
-        }else if (akanDay === 5 && gender === "Female" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = femaleAkan[5];
-            return true;
-        } else if (akanDay === 6 && gender === "Male" && validDay && validMonth && validYear) {
-            document.getElementById("result").value = maleAkan[6];
-            return true;
-        } else if (akanDay === 6 && gender === "Female" && validDay && validMonth && validYear) {
-            document.getElementById("result").value= femaleAkan[6];
-        } 
+    console.log(akanDay);
+    
+    if (akanDay === 0 && gender === "male" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = maleAkan[0];
+        return true;
+    } else if (akanDay === 0 && gender === "female" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = femaleAkan[0];
+        return true;
+    } else if (akanDay === 1 && gender === "male" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = maleAkan[1];
+        return true;
+    } else if (akanDay === 1 && gender === "female" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = femaleAkan[1];
+        return true;
+    } else if (akanDay === 2 && gender === "male" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = maleAkan[2];
+        return true;
+    } else if (akanDay === 2 && gender === "female" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = femaleAkan[2];
+        return true;
+    } else if (akanDay === 3 && gender === "male" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = maleAkan[3];
+        return true;
+    } else if (akanDay === 3 && gender === "female" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = femaleAkan[3];
+        return true;
+    } else if (akanDay === 4 && gender === "male" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = maleAkan[4];
+        return true;
+    }else if (akanDay === 4 && gender === "female" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = femaleAkan[4];
+        return true;
+    }else if (akanDay === 5 && gender === "male" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = maleAkan[5];
+        return true;
+    }else if (akanDay === 5 && gender === "female" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = femaleAkan[5];
+        return true;
+    } else if (akanDay === 6 && gender === "male" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = maleAkan[6];
+        return true;
+    } else if (akanDay === 6 && gender === "female" && validDay && validMonth && validYear) {
+        document.getElementById("result").value = femaleAkan[6];
+    } 
 }
